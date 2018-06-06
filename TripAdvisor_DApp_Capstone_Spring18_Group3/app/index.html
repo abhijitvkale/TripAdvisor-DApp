@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+ <title>TripAdvisor Decentralized</title>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+  
+    .my-custom-width{
+       width:66.67%;
+    }
+
+</style>
+</style>
+<body>
+    <div style="text-align:center">
+        <h1>TripAdvisor App Review</h1>
+        </div>
+	
+
+            <div class="container-fluid">
+            
+                <div class="col-sm-offset-1 col-sm-6 ">
+                  
+                      <h2>Purchase Tokens</h2>
+                      <div id="buy-msg"></div>
+                        <input type="text" id="buy" class="col-sm-12 my-custom-width" placeholder="Number of tokens to buy" />&nbsp;
+                        <a href="#" onclick="buyTokens(); return false;"  class="btn btn-primary" class="col">Buy</a>
+                        &nbsp;&nbsp;
+                      </div>
+                    
+                </div>
+           
+        <div class="container-fluid">
+        
+           <div class="col-sm-offset-1 col-sm-6 ">
+              <h2>Token Stats</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <tr>
+                      <td>Tokens For Sale</td>
+                      <td id="tokens-total"></td>
+                    </tr>
+                    <tr>
+                      <td>Tokens Sold</td>
+                      <td id="tokens-sold"></td>
+                    </tr>
+                    <tr>
+                      <td>Price Per Token</td>
+                      <td id="token-cost"></td>
+                    </tr>
+                    <tr>
+                      <td>Balance in the contract</td>
+                      <td id="contract-balance"></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+         
+        
+         
+        
+        <div class="container-fluid">
+            
+          <div class="col-sm-offset-1 col-sm-6">
+            
+                <h2>Token Details</h2>
+                  <input type="text" id="voter-info" class="col-sm-12 my-custom-width"   placeholder="Enter the  address" />&nbsp;
+                  <br/>
+                  <a href="#" onclick="lookupPersonInfo();return false;" class="btn btn-primary">Lookup</a>
+                  <br/>
+                  &nbsp;&nbsp;
+                  <div class="voter-details row text-left">
+                    <div id="tokens-bought" class="margin-top-3 col-sm-12"></div>
+                    <div id="votes-cast" class="col-md-12"></div>
+                  </div>
+                </div>
+              
+          </div>
+          <div style="text-align:center"><a  href="add-review.html" class="btn btn-primary">Add Review</a></div>
+        <div><h2>Total Reviews: <span id="total-products"></span></h2></div></br>
+        <div class="container-fluid">
+        <div class="row margin-top-3" >
+        <div class="row">
+         <div class="col-sm-10">
+          <div style="text-align:center" >
+           <h2>Places with Review</h2>  
+          </div></br>
+           <div class="row">
+            <div class="row" id="product-list"></div>
+            </div> 
+          </div>
+        </div>
+      </div>
+</div>
+
+
+     
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./app.js"></script>
+</html>
